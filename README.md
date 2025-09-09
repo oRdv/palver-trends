@@ -1,8 +1,10 @@
-# Palver Trends 📊
+# 📊 Palver Trends
 
 Uma aplicação SPA inspirada no Google Trends para visualização de dados temporais e geográficos, construída com React e Vite.
 
-## 📋 Funcionalidades
+![Palver Trends](https://img.shields.io/badge/React-18.2.0-blue) ![Vite](https://img.shields.io/badge/Vite-4.4.0-purple) ![Mantine](https://img.shields.io/badge/Mantine-7.0.0-green)
+
+## ✨ Funcionalidades
 
 - **Gráfico de Linha Temporal**: Visualize tendências ao longo do tempo
 - **Gráfico de Heatmap**: Identifique padrões geográficos de interesse
