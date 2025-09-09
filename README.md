@@ -1,27 +1,105 @@
-# 📊 Palver Trends
+---
 
-Uma aplicação SPA inspirada no Google Trends para visualização de dados temporais e geográficos, construída com React e Vite.
+# 📊 Palver Trends  
 
-![Palver Trends](https://img.shields.io/badge/React-18.2.0-blue) ![Vite](https://img.shields.io/badge/Vite-4.4.0-purple) ![Mantine](https://img.shields.io/badge/Mantine-7.0.0-green)
+Bem-vindo ao **Palver Trends**! 🌟  
+Esta é uma aplicação SPA inspirada no Google Trends para visualização de dados temporais e geográficos, construída com [React](https://reactjs.org/), [Vite](https://vitejs.dev/), e estilizada com [Mantine](https://mantine.dev/).  
 
-## ✨ Funcionalidades
+A ideia é fornecer uma interface moderna e responsiva para explorar tendências de interesse ao longo do tempo e por região.  
 
-- **Gráfico de Linha Temporal**: Visualize tendências ao longo do tempo
-- **Gráfico de Heatmap**: Identifique padrões geográficos de interesse
-- **Filtros de Período**: Alterne entre 24 horas, 7 dias e 30 dias
-- **Design Responsivo**: Experiência consistente em desktop e mobile
-- **Interface Moderna**: Baseada no design do Google Trends com componentes Mantine
+---
 
-## 🚀 Começando
+## 🛠️ Pré-requisitos  
 
-### Pré-requisitos
+Antes de começar, tenha certeza de que você tem instalado:  
+- **Node.js** (v16 ou superior) 🌳  
+- **NPM** ou outro gerenciador de pacotes compatível (como Yarn) 📦  
 
-- Node.js (versão 16 ou superior)
-- npm ou yarn
+💡 **Nota importante:**  
+O projeto é uma SPA e não depende de backend externo para os dados iniciais (mas pode ser integrado com APIs futuramente).  
 
-### Instalação
+---
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/oRdv/palver-trends.git
-cd palver-trends
+## 🔧 Configuração  
+
+1. **Clone o repositório**  
+   ```bash
+   git clone https://github.com/oRdv/palver-trends.git
+   cd palver-trends
+   ```
+
+2. **Instale as dependências**  
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
+
+3. **Verifique as configurações**  
+   Não há configurações adicionais obrigatórias para execução local.
+
+---
+
+## 🚀 Como Executar
+
+1. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
+
+2. Acesse no navegador:  
+   **http://localhost:5173**
+
+---
+
+## 📚 Sobre o Projeto
+
+O Palver Trends permite analisar tendências através de:
+- Gráficos temporais interativos
+- Visualização geográfica de dados
+- Filtros dinâmicos por período e região
+
+Tecnologias principais:
+- **React 18** com Vite
+- **Mantine 7** para componentes UI
+- **Recharts/ApexCharts** para visualizações
+- Design totalmente responsivo
+
+---
+
+## 🤔 Dúvidas ou Problemas?
+
+Verifique se:
+- As dependências foram instaladas corretamente
+- A porta 5173 está disponível
+- Sua versão do Node.js é compatível
+
+Caso persista, entre em contato pelo [LinkedIn](https://www.linkedin.com/in/tamires-fernandes-262577266/))
+
+---
+
+## 🗂️ Estrutura do Projeto
+
+```
+palver-trends/
+├── public/
+├── src/
+│   ├── components/    # Componentes reutilizáveis
+│   ├── pages/         # Páginas da aplicação
+│   ├── services/      # Lógica de dados
+│   └── assets/        # Recursos estáticos
+├── package.json
+└── vite.config.js
+```
+
+---
+
+## 📝 Licença
+
+Este projeto está sob licença MIT. 
+
+Desenvolvido com ❤️ por [oRdv](https://github.com/oRdv)
+
+--- 
