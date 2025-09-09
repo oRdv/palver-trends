@@ -1,0 +1,69 @@
+.date-filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+
+  .filter-label {
+    font-size: 13px;
+    color: var(--mantine-color-gray-7);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+}
+
+.filter-buttons {
+  border-radius: 20px;
+  padding: 2px;
+  background: var(--mantine-color-white);
+  border: 1px solid var(--mantine-color-gray-3);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  
+  .filter-button {
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    
+    // Estilo para botões não selecionados
+    &[data-variant="default"] {
+      background: transparent;
+      color: var(--mantine-color-gray-7);
+      
+      &:hover {
+        background: rgba(26, 115, 232, 0.08);
+        color: var(--mantine-color-blue-7);
+      }
+    }
+    
+    &[data-variant="filled"] {
+      background: var(--mantine-color-blue-6);
+      color: white;
+      box-shadow: 0 2px 4px rgba(26, 115, 232, 0.3);
+      
+      &:hover {
+        background: var(--mantine-color-blue-7);
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .date-filter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .filter-buttons {
+    width: 100%;
+    
+    .filter-button {
+      flex: 1;
+      min-width: 70px;
+      text-align: center;
+      padding: 6px 12px;
+    }
+  }
+}

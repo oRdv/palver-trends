@@ -1,0 +1,65 @@
+.time-series-chart {
+  transition: var(--transition-smooth);
+  
+  .custom-tooltip {
+    background: #fff;
+    border: 1px solid #dadce0;
+    border-radius: 10px;
+    padding: 14px 16px;
+    box-shadow: var(--shadow-lg);
+    animation: tooltipAppear 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+    .label {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+      font-size: 14px;
+      border-bottom: 1px solid #f1f3f4;
+      padding-bottom: 6px;
+    }
+
+    .value {
+      color: var(--primary-blue);
+      font-weight: 600;
+      font-size: 16px;
+      transition: var(--transition-default);
+    }
+    
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin: 4px 0;
+      
+      .item-name {
+        color: var(--text-secondary);
+        font-weight: 500;
+        
+        &[data-name="value"]::before {
+          content: "Valor";
+        }
+      }
+      
+      .item-value {
+        color: var(--primary-blue);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: #f1f3f4;
+  transition: var(--transition-default);
+}
+
+.recharts-line-curve {
+  stroke-width: 2.5;
+  transition: var(--transition-default);
+}
+
+.recharts-line .recharts-curve:hover {
+  stroke-width: 3;
+}
